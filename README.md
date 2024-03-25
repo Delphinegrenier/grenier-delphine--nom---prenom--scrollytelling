@@ -3,3 +3,11 @@
 ## Conception:
 - Delphine Grenier
 - Kenza El Harrif
+## Développement/programmation:
+- Delphine Grenier
+## Technologies:
+- HTML
+- CSS
+- JavaScript
+- [Librairie d'animation GSAP](https://gsap.com/)
+- [Plugiciel ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)
