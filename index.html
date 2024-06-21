@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilo</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/img_personnages/favicon.ico">
+</head>
+
+<body>
+<!-- ---------- Début Écran d'introduction -------- -->
+    <header>
+        <h1>Lilo</h1>
+        <div class="appel-action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path id="stop1" offset="0%" fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            <path id="stop2" offset="100%" fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg></div>
+          <p class="reference"><a href="https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/">Projet scrollytelling</a> créé
+            dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
+            © 2024 - Conception : Delphine Grenier et Kenza El Harrif | Développement Web : Delphine Grenier.</p>
+    </header>
+<!-- ---------- Fin Écran d'introduction ---------- -->
+    <main>
+<!-- ---------- Début Chapitre 1 ------------------ -->
+        <section id="section1">
+            
+            <div class="parallax"> 
+                <div class="layer para00" data-vitesse="4"></div>
+                <div class="layer para01" data-vitesse="7"></div>
+                <div class="layer para02" data-vitesse="2">
+                    <div id="chapitre1">
+                        <h3 class="chapitre sec1-phrase01">CHAPITRE 1</h3>
+                        <h4 class="sous-chapitre sec1-phrase01">Lilo</h4>
+                    </div>
+                    <p class="sec1-phrase02">Il était une fois..dans la forêt enchantée</p>
+                </div>
+                <div class="layer para03" data-vitesse="4"><img id="sec1-lilo" src="./img/img_personnages/Lilo_droite_heureuse.webp" alt="chien" loading="lazy"></div>
+                <div class="layer para04" data-vitesse="5"></div>
+                <div class="layer para05" data-vitesse="2"></div>
+              </div>
+              <div class="tombe">
+              <img id="sec1-lilo2" src="img/img_personnages/Lilo_tombe.webp" alt="chien tombe" loading="lazy">
+              <p class="textes sec1-phrase05">Lilo tomba et tomba, emportée par le tourbillon de ses rêves.</p>
+              <svg class="monsvg" width="100%" height="100%" viewBox="-20 0 557 190" id="svg" style="fill: none; stroke:#3b3b3b">
+                <path id="path" d="M9.13,99.99c0,0,18.53-41.58,49.91-65.11c30-22.5,65.81-24.88,77.39-24.88c33.87,0,57.55,11.71,77.05,28.47c23.09,19.85,40.33,46.79,61.71,69.77c24.09,25.89,53.44,46.75,102.37,46.75c22.23,0,40.62-2.83,55.84-7.43c27.97-8.45,44.21-22.88,54.78-36.7c14.35-18.75,16.43-36.37,16.43-36.37"/>
+            </svg>
+            </div>
+            <ul class="technique-gsap"> 
+                <li>backgroundPosition sur les images pour créer un effet de parallaxe</li> 
+                <li>opacity sur le chien</li> 
+                <li>text</li>
+                <li>x & y sur les éléments des parallaxes et le chien</li>
+                <li>DrawSVG avec le chien qui tombe</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#section1</li> 
+                        <li>scrub: true</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 1 -------------------- -->
+
+<!-- ---------- Début Chapitre 2 ------------------ -->
+        <section id="section2">
+            <div id="chapitre2" class="chapitres">
+                <h3 class="chapitre" >CHAPITRE 2</h3>
+                <h4 class="sous-chapitre">sur un nuage</h4>
+                <img class="poissons poisson2" src="./img/img_elements_visuels/scene2_poisson_02.webp" alt="poisson vert" loading="lazy">
+            </div>
+            <div class="section02">
+                <div id="sec2-nuage">
+                    <div class="nuage-groupe">
+                        <img class="nuage" src="./img/img_elements_visuels/nuage.webp" alt="nuage" loading="lazy">
+                        <img class="nuage assis" src="./img/img_personnages/Lilo_assise.webp" alt="chien assis" loading="lazy">
+                        <img class="nuage peche" src="./img/img_personnages/Mimi_peche.webp" alt="chat qui pêche" loading="lazy">
+                    </div>
+                </div>
+                <svg class="monsvg2" width="100%" height="100%" viewBox="-20 0 557 190" id="svg" style="fill: none; stroke:none">
+                    <path id="path2" d="M9.13,99.99c0,0,18.53-41.58,49.91-65.11c30-22.5,65.81-24.88,77.39-24.88c33.87,0,57.55,11.71,77.05,28.47c23.09,19.85,40.33,46.79,61.71,69.77c24.09,25.89,53.44,46.75,102.37,46.75c22.23,0,40.62-2.83,55.84-7.43c27.97-8.45,44.21-22.88,54.78-36.7c14.35-18.75,16.43-36.37,16.43-36.37"/>
+                </svg>
+                <img id="poiss" class="poissons poisson4" src="./img/img_elements_visuels/scene2_poisson_04.webp" alt="gros poisson vert" loading="lazy">
+            <p class="textes sec2-phrase01">La tête dans les nuages, Lilo rencontra un chat appelé Mitaine.</p>
+            <img class="poissons poisson1" src="./img/img_elements_visuels/scene2_poisson_01.webp" alt="poisson violet" loading="lazy">
+
+            <img class="poissons poisson3" src="./img/img_elements_visuels/scene2_poisson_03.webp" alt="poisson orange" loading="lazy">
+            <div class="sec2-texte">
+
+            </div>
+            </div>
+            <ul class="technique-gsap"> 
+                <li>backgroundPosition sur le fond</li> 
+                <li>opacity sur le texte</li> 
+                <li>text</li>
+                <li>top sur le div de la ligne de pêche et le poisson</li>
+                <li>x & y sur le texte, les poissons et le nuage</li>
+                <li>MotionPathPlugin sur le poisson vert</li>
+                <ul> 
+                    <li>Motion Path sur le poisson</li> 
+                </ul> 
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#section2</li> 
+                        <li>scrub: true</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 2 -------------------- -->
+
+<!-- ---------- Début Chapitre 3 -------------------- -->
+        <section id="section3">
+            <div id="chapitre3" class="chapitres">
+                <h3 class="chapitre" >CHAPITRE 3</h3>
+                <h4 class="sous-chapitre">explosions de crystaux</h4>
+            </div>
+            <div class="section03">
+                <p class="textes sec3-phrase01">Elles partirent à l'aventure...</p>
+            <div id="sec3-nuage">
+                <div class="nuage-groupe">
+                    <img class="nuage" src="./img/img_elements_visuels/nuage.webp" alt="nuage" loading="lazy">
+                    <img class="lilo-mimi" src="./img/img_personnages/Lilo_Mimi_sur_dos.webp" alt="nuage" loading="lazy">
+                </div>
+            </div>
+            <img class="crystal crystal01" src="img/img_elements_visuels/scene3_crystal_01.webp" alt="crystal vert" loading="lazy">
+            <img class="crystal crystal02" src="img/img_elements_visuels/scene3_crystal_02.webp" alt="crystal vert" loading="lazy">
+            <div class="gros-crystal">
+                <img class="groupecrystal01" src="img/img_elements_visuels/scene3_groscrystal_01.webp" alt="crystal vert" loading="lazy">
+                <img class="groupecrystal02" src="img/img_elements_visuels/scene3_groscrystal_02.webp" alt="crystal vert" loading="lazy">
+                <img class="groupecrystal03" src="img/img_elements_visuels/scene3_groscrystal_03.webp" alt="crystal vert" loading="lazy">
+                <img class="groupecrystal04" src="img/img_elements_visuels/scene3_groscrystal_04.webp" alt="crystal vert" loading="lazy">
+                <span class="boom">BOOM</span>
+            </div>
+            </div>
+            <ul class="technique-gsap"> 
+                <li>backgroundPosition sur le fond</li> 
+                <li>opacity sur le texte et le nuage</li> 
+                <li>text</li>
+                <li>x & y sur les crystaux, le nuage et les chapitres</li>
+                <li>scale sur le boom</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#section3</li>
+                        <li>scrub: true</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 3 -------------------- -->
+
+<!-- ---------- Début Chapitre 4 -------------------- -->
+        <section id="section4">
+            <div id="chapitre4" class="chapitres">
+                <h3 class="chapitre" >CHAPITRE 4</h3>
+                <h4 class="sous-chapitre">une peur bleue</h4>
+            </div>
+            <div id="section04">
+                <p class="textes sec4-phrase01">"J'espère que tu n'as pas peur du noir", lança Mitaine.</p>
+                <p class="textes sec4-phrase02">Toujours confiantes, les amies se sentaient prêtes à attaquer de prochains défis.</p>
+            <div id="sec4-nuage">
+                <div class="nuage-groupe">
+                    <img class="nuage" src="./img/img_elements_visuels/nuage.webp" alt="nuage" loading="lazy">
+                    <img class="lilo-mimi" src="./img/img_personnages/Lilo_Mimi_sur_dos.webp" alt="chat sur dos d'un chien" loading="lazy">
+                </div>
+            </div>
+            <div id="section4-grotte">
+                <div class="grotte-groupe">
+                    <img class="yeux-chien" src="./img/img_personnages/lilo_yeux.webp" alt="yeux chien" loading="lazy">
+                    <img class="yeux-chat" src="./img/img_personnages/mimi_yeux.webp" alt="yeux chat" loading="lazy">
+                </div>
+
+                <img class="yeux-oiseau" src="./img/img_personnages/kiwi_yeux.webp" alt="yeux oiseau" loading="lazy">
+                <div class="grotte-textes">
+                    <p class="textes sec4-phrase03">T'en est certaine...</p>
+                    <p class="textes sec4-phrase04">Je n'ai pas peur du noir..</p>
+                    <p class="textes sec4-phrase05">HI HI HI HI</p>
+                </div>
+            </div>
+            <div class="spritesheet1"></div>
+            </div>
+        <ul class="technique-gsap"> 
+            <li>Texte</li>
+                <li>x et y sur le fond et le nuage</li>
+                <li>opacity sur les textes et l'oiseau</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#section4</li>
+                        <li> scrub: true</li> 
+                    </ul> 
+                </li> 
+        </ul>
+        </section>
+<!-- ---------- Fin Chapitre 4 -------------------- -->
+
+<!-- ---------- Début Chapitre 5 -------------------- -->
+        <section id="section5">
+            <div id="chapitre5" class="chapitres">
+                <h3 class="chapitre" >CHAPITRE 5</h3>
+                <h4 class="sous-chapitre">le dernier chemin</h4>
+            </div>
+            <div id="section05">
+                <div id="sec5-nuage">
+                    <div class="nuage-groupe">
+                        <img class="nuage" src="./img/img_elements_visuels/nuage.webp" alt="nuage" loading="lazy">
+                        <img class="lilo-mimi" src="./img/img_personnages/Lilo_Mimi_sur_dos.webp" alt="chat sur dos d'un chien" loading="lazy">
+                    </div>
+                </div>
+                <p class="textes sec5-phrase01">Le duo se rapprochait rapidement du but.</p>
+                <div class="spritesheet2"></div>
+            </div>
+            <ul class="technique-gsap"> 
+                <li>Texte</li>
+                <li>y sur le fond</li>
+                <li>opacity sur l'enseigne'</li>
+                <li>scrollTrigger 
+                    <ul> 
+                        <li>trigger=#section5</li>
+                        <li> scrub: true</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 5 -------------------- -->
+
+<!-- ---------- Début Chapitre 6 -------------------- -->
+        <section id="section6">
+            <div id="chapitre6" class="chapitres">
+                <h3 class="chapitre" >CHAPITRE 6</h3>
+                <h4 class="sous-chapitre">au revoir</h4>
+            </div>
+            <div id="section06-01">
+                <p class="textes sec6-phrase01">Leur aventure arrivait à sa fin.</p>
+                <div id="sec6-nuage">
+                    <div class="nuage-groupe">
+                        <img class="nuage" src="./img/img_elements_visuels/nuage.webp" alt="nuage" loading="lazy">
+                        <img class="lilo-mimi" src="./img/img_personnages/Lilo_Mimi_sur_dos.webp" alt="chat sur dos d'un chien" loading="lazy">
+                        <img class="calin"src="./img/img_personnages/Lilo_Mimi_calin.webp" alt="chat et chien calin" loading="lazy">
+                        <img class="peche" src="./img/img_personnages/Mimi_peche.webp" alt="chat peche" loading="lazy">
+                    </div>
+                </div>
+                <div class="groupe-svg">
+                      <svg class="svg" id="Calque_4" data-name="Calque 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.75 473.39">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #bf6f7e;
+                              stroke-width: 0px;
+                            }
+                          </style>
+                        </defs>
+                        <path id="svg1" class="cls-1" d="M.1,105.75C-2.72,36.8,56.81,2.06,97.1.75c43.64-1.43,61,5,112,56C252.73,4.32,291.73-1.68,320.73.32c40.22,2.77,98,36,97,105s-139,183-209,253C124.73,281.32,2.73,170.32.1,105.75Z"/>
+                        <path id="svg2" class="cls-1" d="M240.83,218.27c68.87-4.22,150,81,165,160s-1,87-25,94-77-21-105-26-62-11-113,14-99,12-98-35,36.36-127,71.68-160,55.32-44,104.32-47Z"/>
+                      </svg>
+                      <svg class="doigts" id="Calque_4" data-name="Calque 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.75 473.39">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #bf6f7e;
+                              stroke-width: 0px;
+                            }
+                          </style>
+                        </defs>
+                        <path class="cls-1 doigt" d="M368.83,207.27c-3.86,44.39,8.82,101.94,48,108s57.17-58.26,55.85-97.15c-1.39-40.96-8.85-96.85-48.85-96.85-33,0-53,63-55,86Z"/>
+                        <path  class="cls-1 doigt" d="M253.02,86.16c-3.86,44.39,8.82,101.94,48,108s57.17-58.26,55.85-97.15c-1.39-40.96-9.03-93.09-48.85-96.85s-53,63-55,86Z"/>
+                        <path  class="cls-1 doigt" d="M121.4,93.58c-.93,44.54,15.51,101.14,55,104.61s53.22-61.9,49.34-100.61c-4.08-40.78-15.22-96.27-55.11-93.43-43.8,3.12-48.74,66.35-49.23,89.43Z"/>
+                        <path  class="cls-1 doigt" d="M.04,207.29c-.93,44.54,15.51,101.14,55,104.61,39.49,3.47,53.22-61.9,49.34-100.61-4.08-40.78-15.22-96.27-55.11-93.43C5.47,120.98.52,184.21.04,207.29Z"/>
+                      </svg>
+                </div>
+                <div class="sec6-lilo">
+                    <img class="lilo-triste" src="./img/img_personnages/Lilo_gauche_triste.webp" alt="chien triste" loading="lazy">
+                    <img class="lilo-heureuse" src="./img/img_personnages/Lilo_droite_heureuse.webp" alt="chien heureux" loading="lazy">
+                </div>
+                <img class="gazon" src="./img/img_arriere_plan/scene1_gazon.png" alt="gazon" loading="lazy">
+            </div>
+            <div id="section06-02">
+                    <h3 class="chapitre fin" > FIN</h3>
+                    <img class="fin-image" src="./img/img_personnages/Lilo_gauche_heureuse.webp" alt="chien heureux" loading="lazy">
+                </div>
+            </div>
+
+            <ul class="technique-gsap"> 
+                <li>x & y sur le fond et le nuage et les animaux</li> 
+                <li>Opacity sur les animaux et les doigts</li>
+                <li>Stagger sur les doigts</li>
+                <li>MorphSVG du coeur à la patte</li>
+                <li>Text</li> 
+                <li>scrollTrigger
+                    <ul> 
+                        <li>trigger=section6</li> 
+                        <li>scrub: true</li> 
+                    </ul> 
+                </li> 
+            </ul>
+        </section>
+<!-- ---------- Fin Chapitre 6 -------------------- -->
+    </main>
+    <footer>
+        <p><a href="https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/">Projet scrollytelling</a> créé
+            dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
+            © 2024 - Conception : Delphine Grenier et Kenza El Harrif | Développement Web : Delphine Grenier. <br>
+        Créations des médias : Delphine Grenier et Kenza El Harrif</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
